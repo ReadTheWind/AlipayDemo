@@ -4,3 +4,13 @@
   退款
   查询交易订单
   查询退款交易订单
+  
+支付宝平台：https://auth.alipay.com/login/ant_sso_index.htm?goto=https%3A%2F%2Fopenhome.alipay.com%2Fplatform%2FappDaily.htm%3Ftab%3Dinfo
+
+支付文档：https://docs.open.alipay.com/270/105899/
+
+支付API详解：https://www.cnblogs.com/zyw-205520/p/6920568.html
+
+参考文档：https://blog.csdn.net/cdszdd8/article/details/76815394
+
+参考项目：https://github.com/jmdhappy/xxpay-master
