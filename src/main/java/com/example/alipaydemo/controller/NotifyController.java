@@ -22,6 +22,11 @@ public class NotifyController {
 
 	private  Logger log= LoggerFactory.getLogger(NotifyController.class);
 
+	/**
+	 * 支付回调处理方法
+	 * @param request
+	 * @return
+	 */
 	@RequestMapping("alinotify")
 	public String aliNotify(HttpServletRequest request){
 		log.info("【支付宝支付回调通知处理开始】");

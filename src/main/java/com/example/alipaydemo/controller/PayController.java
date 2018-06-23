@@ -22,7 +22,10 @@ public class PayController {
 	PayUtil payUtil;
 
 
-
+	/**
+	 * 处理下单支付入口
+	 * @return
+	 */
 	@RequestMapping("/payorder")
 	public  String payOrder(){
 		log.info("【支付宝支付扫码支付处理开始】");
@@ -32,6 +35,10 @@ public class PayController {
 	@Autowired
 	RefundOrder refundOrder;
 
+	/**
+	 * 处理退款入口
+	 * @return
+	 */
 	@RequestMapping("/refundorder")
 	public String refund(){
 		String s=refundOrder.refundAlipay();
@@ -41,6 +48,10 @@ public class PayController {
 	@Autowired
 	QueryTrade queryTrade;
 
+	/**
+	 * 查询交易入口
+	 * @return
+	 */
 	@RequestMapping("/queryTrade")
 	public String queryTrade(){
 		return  queryTrade.queryOrder();
@@ -49,6 +60,10 @@ public class PayController {
 	@Autowired
 	QueryRefundOrder queryRefundOrder;
 
+	/**
+	 * 查询退款交易入口
+	 * @return
+	 */
 	@RequestMapping("/queryRefundOrder")
 	public  String queryRefundOrder(){
 		return  queryRefundOrder.queryRefound();
